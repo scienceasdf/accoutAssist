@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>acountAssit</class>
+ <widget class="QWidget" name="acountAssit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>acountAssit</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>支出情况</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <widget class="QPushButton" name="updateButton">
+         <property name="text">
+          <string>修改选中行数据</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QTableView" name="tableView">
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOn</enum>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>新建支出记录</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>收入情况</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QTableView" name="incomeTable"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="insertIncomeButton">
+         <property name="text">
+          <string>插入收入记录</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>修改选中行记录</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>报表统计</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="dailyReport">
+         <property name="text">
+          <string>输出单日报表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QPushButton" name="rangeButton">
+         <property name="text">
+          <string>输出区间报表</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QComboBox" name="rangeTypeBox">
+         <item>
+          <property name="text">
+           <string>本周</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>本月</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>本季度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>本年度</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>自定义区间</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QCalendarWidget" name="endCalendar"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCalendarWidget" name="beginCalendar"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>自定义区间起于</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>自定义区间止于</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>区间报表选项</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
